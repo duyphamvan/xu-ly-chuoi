@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var regex = /^[C,A,P][0-9]{4}[G,H,I,K,L,M]$/
+		function validateClass(str) {
+			if (regex.test(str)) {
+			    return true;
+			}
+			    
+			return false;
+		}
+		var class1 = 'C0318G';
+		var class2 = 'M0318G';
+		var class3 = 'M0_31.$8G';
+		var class4 = 'C018G';
+		console.log(validateClass(class1));
+		console.log(validateClass(class2));
+		console.log(validateClass(class3));
+		console.log(validateClass(class4));
+	</script>
+</body>
+</html>

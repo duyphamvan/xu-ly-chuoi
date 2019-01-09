@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var regex = /^\([0-9]{2}\)-\([0-9]{10}\)/;
+		function phoneNumbers(str) {
+			if (regex.test(str)) {
+			    return true;
+			}
+			    
+			return false;
+		}
+
+		var sdt1 = '(84)-(0978489648)';
+		var sdt3 = '(8a)-(0964899999)';
+		var sdt2 = '(84)-(096480000000000)';
+		console.log(phoneNumbers(sdt1));
+		console.log(phoneNumbers(sdt2));
+		console.log(phoneNumbers(sdt3));
+
+	</script>
+</body>
+</html>

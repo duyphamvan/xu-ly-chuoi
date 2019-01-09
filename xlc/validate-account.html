@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function validateEmail(str) {
+			var regex = /^[_a-z0-9]{6,}$/;
+
+			if (regex.test(str)) {
+			    return true;
+			} 
+			    
+			return false;		
+		}
+
+		var account = 'duy_vd';
+		var account1 = 'duy_';
+		console.log(validateEmail(account));
+		console.log(validateEmail(account1));
+	</script>
+</body>
+</html>
